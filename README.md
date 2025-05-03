@@ -1,6 +1,6 @@
 # 📊 Detección de Fraude Financiero con XGBoost y Reglas Dinámicas
 
-Este repositorio contiene el notebook desarrollado en Kaggle para detectar transacciones fraudulentas combinando técnicas de machine learning (XGBoost) con reglas dinámicas.
+Este repositorio contiene el notebook desarrollado en Python en la plataforma Kaggle para detectar transacciones fraudulentas combinando técnicas de machine learning (XGBoost) con reglas dinámicas.
 
 ---
 
