@@ -6,7 +6,7 @@ Este repositorio contiene el notebook desarrollado en Python en la plataforma Ka
 
 ## 🚀 Enlace al notebook:
 
-📎 https://github.com/oleksandralabenskauoc/TFM-XGBoos_Model_Reglas_Dinamicas/blob/main/tfm-xgboos-model-reglas-dinamicas.ipynb
+📎https://github.com/oleksandralabenskauoc/TFM-XGBoos_Model_Reglas_Dinamicas/blob/main/tfm-xgboost-model-reglas-dinamicas-v3.ipynb
 
 ---
 
@@ -14,16 +14,29 @@ Este repositorio contiene el notebook desarrollado en Python en la plataforma Ka
 
 Se ha utilizado:
 - **XGBoost** como modelo base entrenado con el dataset de Kaggle "Creadit Card Fraud Detection" (https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+- **Regresión Logística** y **Random Forest** como modelos comparativos
 - **Reglas dinámicas** para detectar patrones adicionales de fraude
 
 ---
 
-## 📈 Resultados:
+## 📊 Resultados de la Comparación de los Modelos:
 
-| Modelo                        | Accuracy | Precision | Recall  | F1-Score |
-|------------------------------|----------|-----------|---------|----------|
-| XGBoost                      | 0.9995   | 0.866     | 0.857   | 0.861    |
-| XGBoost + Reglas Dinámicas   | 0.9816   | 0.075     | 0.857   | 0.138    |
+| Modelo                                      | Accuracy   | Precision  | Recall     | F1-score   | ROC AUC   |
+|---------------------------------------------|------------|------------|------------|------------|-----------|
+| XGBoost                                     | 0.999491   | 0.879121   | 0.816327   | 0.846561   | 0.986169  |
+| Random Forest                               | 0.999491   | 0.952941   | 0.826531   | 0.885246   | 0.983225  |
+| Logistic Regression                         | 0.999491   | 0.294118   | 0.867347   | 0.439276   | 0.966374  |
+| XGBoost + Ajuste de los Hiperparámetros     | 0.999491   | 0.931818   | 0.836735   | 0.881720   | 0.984504  |
+
+---
+
+## 📈 Resultados Finales:
+
+| Modelo                                    | Accuracy   | Precision  | Recall     | F1-score   | ROC AUC   |
+|-------------------------------------------|------------|------------|------------|------------|-----------|
+| XGBoost + Ajuste de los Hiperparámetros   | 0.999491   | 0.931818   | 0.836735   | 0.881720   | 0.984504  |
+| XGBoost + Reglas Dinámicas                | 0.962010   | 0.036771   | 0.836735   | 0.070447   | NA        |
+
 
 > ⚠️ Nota: Las reglas dinámicas reducen algunas métricas debido a su naturaleza "ad hoc", pero amplían la cobertura de detección.
 
