@@ -35,7 +35,7 @@ Se ha utilizado:
 | Modelo                                    | Accuracy   | Precision  | Recall     | F1-score   | ROC AUC   |
 |-------------------------------------------|------------|------------|------------|------------|-----------|
 | XGBoost + Ajuste de los Hiperparámetros   | 0.999491   | 0.931818   | 0.836735   | 0.881720   | 0.984504  |
-| XGBoost + Reglas Dinámicas                | 0.962010   | 0.036771   | 0.836735   | 0.070447   | NA        |
+| XGBoost + Reglas Dinámicas                | 0.981760   | 0.074208   | 0.836735   | 0.136326   | NA        |
 
 
 > ⚠️ Nota: Las reglas dinámicas reducen algunas métricas debido a su naturaleza "ad hoc", pero amplían la cobertura de detección.
